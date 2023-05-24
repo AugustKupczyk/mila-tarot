@@ -1,0 +1,274 @@
+body{
+  background-image: url(../images/fondo.jpg);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.foto-container{
+  height: 12vh;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 400px;
+  background-color: black;
+  text-align: center;
+}
+
+.col-6-carta {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.container-promocion{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    background: linear-gradient(105deg, rgba(129,187,6) 0%, rgba(129,187,6) 100%);
+    padding: 20px;
+    gap:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.suscribite{
+  background-color: red;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.recibi{
+  margin-top: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-6-carta {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .thumb {
+    width: 25px;
+    height: 50px;
+  }
+  .tarot-image {
+    width: 25px;
+    height: 50px;
+  }
+  .logo-carta {
+    width: 20px;
+    height: 18px;
+  }
+  .portfolio-item {
+    width: 25px;
+    height: 50px;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+}
+
+.our-portfolio .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.portfolio-item:hover .thumb .hover-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portfolio-item .thumb {
+  position: relative;
+  border-radius: 10px;
+}
+
+.portfolio-item .thumb img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.portfolio-item .thumb .hover-content {
+  border-radius: 10px;
+  overflow: active;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(51,204,197);
+  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.portfolio-item .thumb .hover-content .inner-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.portfolio-item .thumb .hover-content .inner-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.portfolio-item .thumb .hover-content .inner-content span {
+  font-size: 15px;
+  color: #fff;
+}
+
+.our-portfolio .owl-nav {
+  display: inline-block!important;
+  position: absolute;
+  top: -117px;
+  right: 15%;
+  max-width: 1320px;
+}
+
+.our-portfolio .owl-nav .owl-next {
+  margin-left: 10px;
+}
+
+.our-portfolio .owl-nav span {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  font-size: 30px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  color: #ddd;
+  transition: all 0.5s;
+}
+
+.our-portfolio .owl-nav span:hover {
+  color: #000;
+  border-color: #000;
+}
+
+
+.container-fluid {
+  padding-left:30px;
+
+}
+
+.card {
+  perspective: 1000px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 100px;
+  background-color: #FF9999;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  .card-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #FF9999;
+    width: 40px;
+    height: 35px;
+  }
+  
+  .card-back {
+    width: 50px;
+    height: 100px;
+    background-color: #FF9999;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    padding: 3px;
+  }
+
+@media(min-width:360px){
+  
+}
+@media(min-width:425px){
+  
+}
+
+@media(min-width:768px){
+  .foto-container{
+    height: 35vh;
+  }
+  .container-promocion{
+    width:80vw;
+    margin-left: 78px;
+    border-radius: 10px;
+  }
+}
+
+@media(min-width:920px){
+  .container-promocion{
+    margin-left: 100px;
+    gap: 50px;
+  }
+}
+
+@media(min-width:1024px){
+  
+}
+
+@media(min-width:1100px){
+  .container-promocion {
+    width: 50vw;
+    margin-left: 250px;
+    gap: 50px;
+}
+}
+
+@media(min-width:1200px){
+  .container-promocion {
+    width: 50vw;
+    margin-left: 310px;
+    gap: 90px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+}

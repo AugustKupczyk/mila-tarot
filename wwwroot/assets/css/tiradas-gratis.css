@@ -1,0 +1,91 @@
+.row {
+    justify-content: center;
+}
+
+.tarot-parejas-container {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.carta1-container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: start;
+    justify-content: flex-end;
+}
+
+.carta2-container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.tarot-parejas{
+    text-align: center;
+    font-size: 2em;
+    margin: 40px 0px 20px 0px;
+}
+
+.descripcion{
+    text-align: center;
+}
+
+.cartas-container{
+    margin-top: 30px;
+}
+
+.fila1-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.fila2-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fila3-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fila4-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media(max-width:450px){
+   .fila1-container,
+   .fila2-container,
+   .fila3-container,
+   .fila4-container{
+    gap: 8px;
+   }
+}
+
+@media(max-width:320px){
+    .fila1-container,
+   .fila2-container,
+   .fila3-container,
+   .fila4-container{
+    gap: 2px;
+   }
+}
+
+.card-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
